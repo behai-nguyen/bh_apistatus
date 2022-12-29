@@ -6,9 +6,12 @@
 Welcome to bh-apistatus's documentation!
 ========================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+Pip installation::
+
+    pip install bh-apistatus
+	
+- `PyPI -- https://pypi.org/project/bh-apistatus. <https://pypi.org/project/bh-apistatus>`_
+- `GitHub -- https://github.com/behai-nguyen/bh_apistatus. <https://github.com/behai-nguyen/bh_apistatus>`_
 
 .. toctree::
    :maxdepth: 2
