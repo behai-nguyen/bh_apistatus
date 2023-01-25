@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bh-apistatus"
-version = "1.0.0"
+version = "0.0.9"
 description = "API Status Result"
 
 readme = "README.md"
@@ -17,7 +17,7 @@ classifiers = [
 ]
 keywords = ["api", "status", "result"]
 dependencies = ['tomli; python_version < "3.11"']
-requires-python = ">=3.10"
+requires-python = ">=3.7"
 
 [project.optional-dependencies]
 build = ["build", "twine"]
