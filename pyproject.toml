@@ -16,12 +16,16 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 keywords = ["api", "status", "result"]
-dependencies = ['tomli; python_version < "3.11"']
+dependencies = [
+    'tomli; python_version < "3.11"',
+    'pytest', 
+    'coverage'
+]
 requires-python = ">=3.7"
 
 [project.optional-dependencies]
 build = ["build", "twine"]
-dev   = ["pytest", "coverage", "sphinx", "myst-parser", "sphinx-rtd-theme", "m2r"]
+dev   = ["sphinx", "myst-parser", "sphinx-rtd-theme", "m2r"]
 
 [project.urls]
 repository    = "https://github.com/behai-nguyen/bh_apistatus"
