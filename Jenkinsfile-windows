@@ -23,7 +23,7 @@ pipeline {
 		
 		stage('Create and activate virtualenv') {
 		    steps {
-		        sh "//c/pf/python310/scripts/virtualenv.exe $PYENV_HOME"
+		        sh "c/pf/python310/scripts/virtualenv.exe $PYENV_HOME"
 
 				dir("${WORKSPACE}") {
 					sh "venv/scripts/activate"
