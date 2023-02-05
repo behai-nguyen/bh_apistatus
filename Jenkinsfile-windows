@@ -23,23 +23,23 @@ pipeline {
 		
 		stage('Create and activate virtualenv') {
 		    steps {
-		        sh "sh "//c/pf/python310/scripts/virtualenv.exe $PYENV_HOME""
+		        sh "//c/pf/python310/scripts/virtualenv.exe $PYENV_HOME"
 
 				dir("${WORKSPACE}") {
-					sh ". venv/Scripts/activate"
+					sh "venv/scripts/activate"
 				}
 		    }
 		}
 				
 		stage('Run editable install') {
 		    steps {
-		        sh "$PYENV_HOME/Scripts/pip install -e ."
+		        sh "$PYENV_HOME/scripts/pip install -e ."
 		    }
 		}
 		
 		stage('Run pytest') {
 		    steps {
-		        sh "$PYENV_HOME/Scripts/pytest"
+		        sh "$PYENV_HOME/scripts/pytest"
 		    }
 		}		
     }
