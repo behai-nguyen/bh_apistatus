@@ -5,7 +5,7 @@ Final result status can be returned to (web) clients as JSON.
 
 ## Documentation
 
-[Full documentation](https://bh_apistatus.readthedocs.io/)
+[Full documentation](https://bh-apistatus.readthedocs.io/en/latest/)
 
 ## License
 
