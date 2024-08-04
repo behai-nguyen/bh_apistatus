@@ -12,19 +12,20 @@ import sys
 sys.path.insert(0, os.path.abspath('../src'))
 
 project = 'bh-apistatus'
-copyright = '2022, Van Be Hai Nguyen'
+copyright = '2024, Van Be Hai Nguyen'
 author = 'Van Be Hai Nguyen'
-release = '1.0.0'
+release = '0.1.0'
+
+autodoc_member_order = 'bysource'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc', 'myst_parser']
+# extensions = ['sphinx.ext.autodoc', 'myst_parser']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
-
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
